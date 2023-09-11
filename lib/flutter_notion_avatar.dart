@@ -33,6 +33,32 @@ class _NotionAvatar extends NotionAvatarController with ChangeNotifier {
   int get mouth => _mouth;
   int get nose => _nose;
 
+  _NotionAvatar({
+    int accessories = 0,
+    int beard = 0,
+    int details = 0,
+    int eyebrows = 0,
+    int eyes = 0,
+    int face = 0,
+    int festival = 0,
+    int glasses = 0,
+    int hair = 0,
+    int mouth = 0,
+    int nose = 0,
+  }) : super() {
+    _accessories = accessories;
+    _beard = beard;
+    _details = details;
+    _eyebrows = eyebrows;
+    _eyes = eyes;
+    _face = face;
+    _festival = festival;
+    _glasses = glasses;
+    _hair = hair;
+    _mouth = mouth;
+    _nose = nose;
+  }
+
   @override
   void random() {
     // random all values
@@ -43,7 +69,7 @@ class _NotionAvatar extends NotionAvatarController with ChangeNotifier {
     _eyebrows = random.nextInt(15);
     _eyes = random.nextInt(13);
     _face = random.nextInt(15);
-    _festival = random.nextInt(10);
+    // _festival = random.nextInt(10);
     _glasses = random.nextInt(14);
     _hair = random.nextInt(58);
     _mouth = random.nextInt(19);
@@ -132,10 +158,55 @@ class _NotionAvatar extends NotionAvatarController with ChangeNotifier {
 }
 
 class NotionAvatar extends StatefulWidget {
-  final void Function(NotionAvatarController controller) onCreated;
+  /// If true, the avatar will be random when created.
+  final bool useRandom;
+
+  /// Called when the avatar is created.
+  ///
+  /// You can use the [NotionAvatarController] to control the avatar.
+  ///
+  /// - [NotionAvatarController.random] to random the avatar.
+  /// - [NotionAvatarController.setAccessories] to set the accessories.
+  /// - [NotionAvatarController.setBeard] to set the beard.
+  /// - [NotionAvatarController.setDetails] to set the details.
+  /// - [NotionAvatarController.setEyebrows] to set the eyebrows.
+  /// - [NotionAvatarController.setEyes] to set the eyes.
+  /// - [NotionAvatarController.setFace] to set the face.
+  /// - [NotionAvatarController.setGlasses] to set the glasses.
+  /// - [NotionAvatarController.setHair] to set the hair.
+  /// - [NotionAvatarController.setMouth] to set the mouth.
+  /// - [NotionAvatarController.setNose] to set the nose.
+  ///
+  /// ```dart
+  /// NotionAvatarController? controller;
+  ///
+  /// @override
+  /// Widget build(BuildContext context) {
+  ///  return MaterialApp(
+  ///   home: Scaffold(
+  ///     body: Center(
+  ///       child: SizedBox(
+  ///         width: 300,
+  ///         height: 300,
+  ///           child: NotionAvatar(
+  ///             useRandom: true, // random when created
+  ///             onCreated: (NotionAvatarController controller) {
+  ///                 this.controller = controller;
+  ///                 // this.controller?.random();
+  ///             },
+  ///           ),
+  ///         ),
+  ///       ),
+  ///     ),
+  ///   );
+  /// }
+  /// ```
+  final void Function(NotionAvatarController controller)? onCreated;
+
   const NotionAvatar({
     super.key,
-    required this.onCreated,
+    this.useRandom = false,
+    this.onCreated,
   });
 
   @override
@@ -156,26 +227,12 @@ class _NotionAvatarState extends State<NotionAvatar> {
     return ChangeNotifierProvider(
       create: (context) {
         controller = _NotionAvatar();
-        controller?.random();
-        widget.onCreated(controller!);
+        widget.useRandom ? controller?.random() : null;
+        widget.onCreated?.call(controller!);
         return controller as _NotionAvatar;
       },
       child: Consumer<_NotionAvatar>(
         builder: (context, avatar, _) {
-          print(
-            'accessories: ${avatar.accessories}, '
-            'beard: ${avatar.beard}, '
-            'details: ${avatar.details}, '
-            'eyebrows: ${avatar.eyebrows}, '
-            'eyes: ${avatar.eyes}, '
-            'face: ${avatar.face}, '
-            'festival: ${avatar.festival}, '
-            'glasses: ${avatar.glasses}, '
-            'hair: ${avatar.hair}, '
-            'mouth: ${avatar.mouth}, '
-            'nose: ${avatar.nose}, ',
-          );
-          // black Color
           return Stack(
             children: [
               Assets.avatar.preview.face.values[avatar.face].svg(
@@ -232,9 +289,5 @@ class _NotionAvatarState extends State<NotionAvatar> {
         },
       ),
     );
-  }
-
-  _face() {
-     
   }
 }

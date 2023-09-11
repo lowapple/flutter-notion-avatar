@@ -34,8 +34,20 @@ class _MyAppState extends State<MyApp> {
             width: 300,
             height: 300,
             child: NotionAvatar(
+              useRandom: true,
               onCreated: (NotionAvatarController controller) {
                 this.controller = controller;
+                //! Examples
+                // this.controller?.random();
+                // this.controller?.setAccessories(5); 
+                // this.controller?.setEyes(5);
+                // this.controller?.setEyebrows(5);
+                // this.controller?.setFace(5);
+                // this.controller?.setGlasses(5);
+                // this.controller?.setHair(5);
+                // this.controller?.setMouth(5);
+                // this.controller?.setNose(5);
+                // this.controller?.setDetails(5);
               },
             ),
           ),
@@ -45,14 +57,6 @@ class _MyAppState extends State<MyApp> {
             child: TextButton(
               onPressed: () {
                 controller?.random();
-              },
-              child: const Text('Random'),
-            ),
-          ),
-          Expanded(
-            child: TextButton(
-              onPressed: () {
-                
               },
               child: const Text('Random'),
             ),

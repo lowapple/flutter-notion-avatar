@@ -1,4 +1,4 @@
-package io.lowapple.flutter.plugin.notion_avatar.flutter_notion_avatar_example
+package io.lowapple.flutter.plugin.notionavatar.example
 
 import io.flutter.embedding.android.FlutterActivity
 
