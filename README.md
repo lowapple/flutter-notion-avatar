@@ -145,5 +145,5 @@ Nose styles can be customized using the `NotionAvatarController`'s `setNose()` m
 
 - Illustration designer: [@Felix Wong](https://www.producthunt.com/@felix12777) on ProductHunt
 - Pack of illustrations: [Noto avatar](https://abstractlab.gumroad.com/l/noto-avatar)
-- Assets licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) <img src="https://github.com/lowapple/flutter-notion-avatar/assets/26740046/8f78af5f-f3a2-498f-804f-1eff428b2eb3" width="50"/>
+- Assets licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) <img src="./resources/cc0.svg" width="50"/>
 - Reference by [Mayandev/notion-avatar](https://github.com/Mayandev/notion-avatar)
