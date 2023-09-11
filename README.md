@@ -2,9 +2,16 @@
 
 Flutter Widget plugin for generating and displaying Notion Avatars.
 
-## Usage
+> This plugin is written simply for use with ToyProject. There is still a lot of work to be done, so if you have any additions or issues, please leave them on Github/issues. 
 
-Wrap the NotionAvatar widget inside a SizedBox to specify the size. Use the `useRandom` property to generate a random avatar.
+<table>
+<tr>
+<th> Usage </th>
+<th> Preview </th>
+</tr>
+<tr>
+<td>
+Wrap the NotionAvatar widget inside a SizedBox(or Widget) to specify the size. Use the `useRandom` property to generate a random avatar.
 
 ```dart
 SizedBox(
@@ -18,6 +25,13 @@ SizedBox(
   ),
 )
 ```
+</td>
+<td>
+<img src="./resources/preview.gif"/>
+</td>
+</tr>
+</table>
+
 ## Controller Methods
 
 The `NotionAvatarController` provides the following methods to control the avatar:
@@ -132,3 +146,4 @@ Nose styles can be customized using the `NotionAvatarController`'s `setNose()` m
 - Illustration designer: [@Felix Wong](https://www.producthunt.com/@felix12777) on ProductHunt
 - Pack of illustrations: [Noto avatar](https://abstractlab.gumroad.com/l/noto-avatar)
 - Assets licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) <img src="./resources/cc0.svg" width="50"/>
+- Reference by [Mayandev/notion-avatar](https://github.com/Mayandev/notion-avatar)

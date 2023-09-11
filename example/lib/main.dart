@@ -14,7 +14,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   NotionAvatarController? controller;
 
   @override
@@ -30,38 +29,39 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin NotionAvatar app'),
         ),
         body: Center(
-          child: SizedBox(
-            width: 300,
-            height: 300,
-            child: NotionAvatar(
-              useRandom: true,
-              onCreated: (NotionAvatarController controller) {
-                this.controller = controller;
-                //! Examples
-                // this.controller?.random();
-                // this.controller?.setAccessories(5); 
-                // this.controller?.setEyes(5);
-                // this.controller?.setEyebrows(5);
-                // this.controller?.setFace(5);
-                // this.controller?.setGlasses(5);
-                // this.controller?.setHair(5);
-                // this.controller?.setMouth(5);
-                // this.controller?.setNose(5);
-                // this.controller?.setDetails(5);
-              },
-            ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(
+                width: 300,
+                height: 300,
+                child: NotionAvatar(
+                  useRandom: true,
+                  onCreated: (NotionAvatarController controller) {
+                    this.controller = controller;
+                    //! Examples
+                    // this.controller?.random();
+                    // this.controller?.setAccessories(5);
+                    // this.controller?.setEyes(5);
+                    // this.controller?.setEyebrows(5);
+                    // this.controller?.setFace(5);
+                    // this.controller?.setGlasses(5);
+                    // this.controller?.setHair(5);
+                    // this.controller?.setMouth(5);
+                    // this.controller?.setNose(5);
+                    // this.controller?.setDetails(5);
+                  },
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  controller?.random();
+                },
+                child: const Text('Random'),
+              )
+            ],
           ),
         ),
-        bottomNavigationBar: Row(children: [
-          Expanded(
-            child: TextButton(
-              onPressed: () {
-                controller?.random();
-              },
-              child: const Text('Random'),
-            ),
-          ),
-        ]),
       ),
     );
   }
