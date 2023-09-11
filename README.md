@@ -27,7 +27,7 @@ SizedBox(
 ```
 </td>
 <td>
-<img src="./resources/preview.gif"/>
+<img src="https://github.com/lowapple/flutter-notion-avatar/assets/26740046/3a5ba67c-42c8-492b-a579-d630b2edb3fa"/>
 </td>
 </tr>
 </table>
@@ -53,8 +53,8 @@ The `NotionAvatarController` provides the following methods to control the avata
 
 <details>
 <summary>Accessories</summary>
-
-![](resources/accessories.png)
+  
+![accessories](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/04f773d1-972d-465f-9060-e545b6a10087)
 
 Accessories can be customized using the `NotionAvatarController`'s `setAccessories()` method.
 
@@ -63,7 +63,7 @@ Accessories can be customized using the `NotionAvatarController`'s `setAccessori
 <details>
 <summary>Beard</summary>
 
-![](resources/beard.png)
+![beard](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/90f455bc-4814-48f3-b958-4440d2cc972c)
 
 Beard styles can be customized using the `NotionAvatarController`'s `setDetails()` method.
 
@@ -71,8 +71,9 @@ Beard styles can be customized using the `NotionAvatarController`'s `setDetails(
 
 <details>
 <summary>Details</summary>
+  
+![details](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/56ca592f-f888-446b-bc50-c2b31fe7d846)
 
-![](resources/details.png)
 
 Details can be customized using the `NotionAvatarController`'s `setDetails()` method.
 
@@ -80,8 +81,9 @@ Details can be customized using the `NotionAvatarController`'s `setDetails()` me
 
 <details>
 <summary>Eyebrows</summary>
+  
+![eyebrows](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/8793c54b-4465-4578-a289-829386c92e2b)
 
-![](resources/eyebrows.png)
 
 Eyebrow styles can be customized using the `NotionAvatarController`'s `setEyebrows()` method.
 
@@ -89,8 +91,9 @@ Eyebrow styles can be customized using the `NotionAvatarController`'s `setEyebro
 
 <details>
 <summary>Eyes</summary>
+  
+![eyes](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/80ebcca7-dec8-427b-892c-237193a42e81)
 
-![](resources/eyes.png)
 
 Eye styles can be customized using the `NotionAvatarController`'s `setEyes()` method.
 
@@ -98,8 +101,9 @@ Eye styles can be customized using the `NotionAvatarController`'s `setEyes()` me
 
 <details>
 <summary>Face</summary>
+  
+![face](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/2c39a099-6d9b-496e-976a-5ac5224536fc)
 
-![](resources/face.png)
 
 Face styles can be customized using the `NotionAvatarController`'s `setFace()` method.
 
@@ -107,8 +111,9 @@ Face styles can be customized using the `NotionAvatarController`'s `setFace()` m
 
 <details>
 <summary>Glasses</summary>
+  
+![glasses](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/35c6dae1-f8db-4eee-88bb-eb70847bc68a)
 
-![](resources/glasses.png)
 
 Glasses styles can be customized using the `NotionAvatarController`'s `setGlasses()` method.
 
@@ -116,8 +121,8 @@ Glasses styles can be customized using the `NotionAvatarController`'s `setGlasse
 
 <details>
 <summary>Hair</summary>
-
-![](resources/hair.png)
+  
+![hair](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/35ae45d4-8af6-4797-94ed-841f539641bd)
 
 Hair styles can be customized using the `NotionAvatarController`'s `setHair()` method.
 
@@ -125,8 +130,8 @@ Hair styles can be customized using the `NotionAvatarController`'s `setHair()` m
 
 <details>
 <summary>Mouth</summary>
-
-![](resources/mouth.png)
+  
+![mouth](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/02a10702-c05f-441f-a63d-63fc099cf58a)
 
 Mouth styles can be customized using the `NotionAvatarController`'s `setMouth()` method.
 
@@ -134,8 +139,8 @@ Mouth styles can be customized using the `NotionAvatarController`'s `setMouth()`
 
 <details>
 <summary>Nose</summary>
-
-![](resources/nose.png)
+  
+![nose](https://github.com/lowapple/flutter-notion-avatar/assets/26740046/d35e62d9-f03e-48c7-a52f-c82c20c77369)
 
 Nose styles can be customized using the `NotionAvatarController`'s `setNose()` method.
 
