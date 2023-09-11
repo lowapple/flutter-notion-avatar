@@ -1,6 +1,6 @@
 name: flutter_notion_avatar
 description: An flutter widget plugin notion-style avatars
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/lowapple/flutter-notion-avatar
 
 environment:
@@ -60,3 +60,7 @@ flutter_gen:
     enabled: true
     output:
       package_parameter_enabled: true
+
+topics:
+  - avatar
+  - notion
