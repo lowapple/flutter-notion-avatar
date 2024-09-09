@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_notion_avatar'
-  s.version          = '0.0.1'
+  s.version          = '0.0.5'
   s.summary          = 'An flutter widget plugin notion-style avatars'
   s.description      = <<-DESC
 An flutter widget plugin notion-style avatars
